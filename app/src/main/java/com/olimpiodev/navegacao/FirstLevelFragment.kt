@@ -15,7 +15,7 @@ class FirstLevelFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         actions[getString(R.string.option_tab)] = TabsActivity::class.java
-        actions[getString(R.string.option_bottom)] = BottomNavActivityActivity::class.java
+        actions[getString(R.string.option_bottom)] = BottomNavActivity::class.java
         actions[getString(R.string.option_pager)] = PagerActivity::class.java
     }
 

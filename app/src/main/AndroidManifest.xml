@@ -17,7 +17,8 @@
             android:name=".PagerActivity"
             android:exported="false" />
         <activity
-            android:name=".BottomNavActivityActivity"
+            android:parentActivityName=".MainActivity"
+            android:name=".BottomNavActivity"
             android:exported="false" />
         <activity
             android:parentActivityName=".MainActivity"
