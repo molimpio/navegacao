@@ -13,6 +13,13 @@
         <entry key="..\:/Users/Moises/Desenvolvimento/Estudos/Android/navegacao/app/src/main/res/layout/menu_header.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Moises/Desenvolvimento/Estudos/Android/navegacao/app/src/main/res/layout/toolbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Moises/Desenvolvimento/Estudos/Android/navegacao/app/src/main/res/menu/main.xml" value="0.12407407407407407" />
+        <entry key="app/src/main/res/layout/activity_bottom_nav_activity.xml" value="0.15925925925925927" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2875905797101449" />
+        <entry key="app/src/main/res/layout/activity_pager.xml" value="0.15925925925925927" />
+        <entry key="app/src/main/res/layout/activity_tabs.xml" value="0.15925925925925927" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.15925925925925927" />
+        <entry key="app/src/main/res/layout/fragment_first_level.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_second_level.xml" value="0.15925925925925927" />
       </map>
     </option>
   </component>
