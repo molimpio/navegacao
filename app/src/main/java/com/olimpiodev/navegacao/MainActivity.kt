@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.FragmentTransaction
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : AppCompatActivity() {
@@ -43,12 +45,15 @@ class MainActivity : AppCompatActivity() {
         menuItem.isCheckable = true
         drawerLayout.closeDrawers()
         val title = menuItem.title.toString()
-        if (supportFragmentManager.findFragmentByTag(title) == null) {
-            val firstLevelFragment = FirstLevelFragment.newInstance(title)
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.content, firstLevelFragment, title)
-                .commit()
+        val fragment = FirstLevelFragment.newInstance(title)
+        val transaction = supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.content, fragment, title)
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+
+        if (content.childCount > 0) {
+            transaction.addToBackStack(null)
         }
+        transaction.commit()
     }
 }
